@@ -1,0 +1,12 @@
+{
+	"name": "control-dat-bot",
+	"version": "0.1.0",
+	"description": "Electron app allowing to control diverse robots",
+	"main": "main.js",
+	"scripts": {
+		"start": "./node_modules/.bin/electron ."
+	},
+	"dependencies": {
+		"electron": "^1.7.8"
+	}
+}
