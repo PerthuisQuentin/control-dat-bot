@@ -20,7 +20,7 @@ controls.addEventListener('change', render);
 
 var loader = new THREE.JDLoader();
 var spider, meshes = [], bones = {};
-var model = 'Spider.JD';
+var model = 'RegisHsu spider.JD';
 
 loader.load('../models/' + model, function(data) {
     spider = data;
@@ -59,3 +59,10 @@ function onWindowResize() {
 }
 
 window.addEventListener('resize', onWindowResize, false);
+
+function animate() {
+    requestAnimationFrame(animate);
+    render();
+}
+
+animate();
